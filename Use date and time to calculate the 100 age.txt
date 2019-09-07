@@ -1,0 +1,22 @@
+#Import date and time
+from datetime import date
+
+#Get name and age as the inputs
+name=input("Give me your name : ")
+age=int(input("Give your age : "))
+
+#Get current date
+today=date.today()
+
+#Get current year
+d=today.strftime("%y")
+d1=str("20"+d)
+
+#Convert date strng back to integer
+d2=int(d1)
+#Calculate the year that complete 100
+d100=100-age+d2
+
+#Print details
+print("Hi " + name)
+print("In "+str(d100)+" you will be 100 years old!!")
